@@ -89,10 +89,6 @@ Hardware > Kernel > Shell > Applications
        ```
        mv file1 file2 file3 ~/stuff
        ```
-     - Moving files to an existing directory:
-       ```
-       mv file1 file2 ~/existing_directory/
-       ```
 
 6. **mkdir (make directory)**
    - Explanation: Creates a new directory.
@@ -100,10 +96,6 @@ Hardware > Kernel > Shell > Applications
      ```
      mkdir practice
      ```
-     - Creating a directory:
-       ```
-       mkdir practice
-       ```
      - Creating nested directories (and their parents if needed):
        ```
        mkdir -p ~/foo/bar
@@ -130,10 +122,6 @@ Hardware > Kernel > Shell > Applications
      ```
      rmdir practice
      ```
-     - Removing an empty directory:
-       ```
-       rmdir practice
-       ```
 
 9. **rm (remove)**
    - Explanation: Removes files or directories.
@@ -156,10 +144,6 @@ Hardware > Kernel > Shell > Applications
       ```
       cat myfile.txt
       ```
-      - Displaying the contents of a file:
-        ```
-        cat myfile.txt
-        ```
 
 11. **less**
     - Explanation: Displays the contents of a file, allowing scrolling.
@@ -167,10 +151,6 @@ Hardware > Kernel > Shell > Applications
       ```
       less myfile.txt
       ```
-      - Viewing contents of a file with less:
-        ```
-        less myfile.txt
-        ```
 
 12. **pwd (print working directory)**
     - Explanation: Prints the current working directory.
@@ -178,10 +158,6 @@ Hardware > Kernel > Shell > Applications
       ```
       pwd
       ```
-      - Printing the current working directory:
-        ```
-        pwd
-        ```
 
 13. **cal (calendar)**
     - Explanation: Displays the calendar for a specified month or year.
