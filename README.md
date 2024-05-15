@@ -256,3 +256,87 @@ Hardware > Kernel > Shell > Applications
      basename test/gfg.txt
      ```
      - Prints `gfg.txt`, stripping the directory `test/`.
+Sure, here are the explanations and examples for the commands you mentioned, following a similar format:
+
+10. **`chmod` Command**:
+   - Explanation: Changes the permissions of files or directories in Linux.
+   - Examples:
+     ```
+     chmod 755 file.txt
+     ```
+     - Grants read, write, and execute permission to the owner of `file.txt`, and read and execute permission to the group and others.
+     The numbers used in the `chmod` command represent permissions in a numeric format. Each permission has a corresponding numeric value:
+
+      - **4**: Read permission
+      - **2**: Write permission
+      - **1**: Execute permission
+
+      These values are assigned to each of the three permission groups:
+
+      1. **Owner**: The user who owns the file or directory.
+      2. **Group**: The group associated with the file or directory.
+      3. **Others**: Everyone else who is not the owner or in the group.
+
+      To assign permissions using `chmod`, you add up the numeric values for the desired permissions:
+
+      - **Read (r)**: 4
+      - **Write (w)**: 2
+      - **Execute (x)**: 1
+
+      For example:
+
+      - Read and write permission: 4 (read) + 2 (write) = 6
+      - Read, write, and execute permission: 4 (read) + 2 (write) + 1 (execute) = 7
+      - No permission: 0
+
+      So, when you see a number like 755 in `chmod 755 file.txt`, it means:
+
+      - The owner of the file (`7`) has read (4), write (2), and execute (1) permissions (4+2+1=7).
+      - The group (`5`) has read (4) and execute (1) permissions (4+1=5).
+      - Others (`5`) have read (4) and execute (1) permissions (4+1=5).
+
+      This numeric representation provides a concise way to set permissions using `chmod` without having to spell out "read," "write," and "execute" each time.
+     
+     ```
+     chmod u+x file.sh
+     ```
+     - Adds execute permission to the owner of `file.sh`.
+
+11. **`chown` Command**:
+   - Explanation: Changes the owner and/or group of a file or directory.
+   - Examples:
+     ```
+     chown user1:group1 file.txt
+     ```
+     - Changes the owner of `file.txt` to `user1` and the group to `group1`.
+     
+     ```
+     chown user2 file2.txt
+     ```
+     - Changes the owner of `file2.txt` to `user2` without changing the group.
+
+12. **`grep` Command**:
+   - Explanation: Searches text or files for specific patterns.
+   - Examples:
+     ```
+     grep "pattern" file.txt
+     ```
+     - Searches `file.txt` for lines containing the specified "pattern" and prints them.
+     
+     ```
+     grep -i "hello" *.txt
+     ```
+     - Searches for lines containing "hello" in all `.txt` files in the current directory, ignoring case.
+
+13. **`find` Command**:
+   - Explanation: Searches files and directories in a directory hierarchy based on various criteria.
+   - Examples:
+     ```
+     find /home/user -type f -name "*.log"
+     ```
+     - Searches for all `.log` files in the `/home/user` directory.
+     
+     ```
+     find . -type d -name "temp"
+     ```
+     - Searches for directories named "temp" in the current directory.
